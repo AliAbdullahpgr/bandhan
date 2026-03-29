@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
@@ -10,7 +13,12 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text */}
-          <div className="text-center lg:text-left">
+          <motion.div 
+            initial={{ opacity: 0, x: -30 }} 
+            animate={{ opacity: 1, x: 0 }} 
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="text-center lg:text-left"
+          >
             <p className="text-gold font-medium text-sm tracking-wide mb-4 uppercase">
               Marriage is a Sunnah of Rasulullah s.a.w.
             </p>
@@ -29,23 +37,32 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <a
+              <motion.a
+                whileHover={{ scale: 1.05, backgroundColor: "#8a1e3e", borderColor: "#8a1e3e", color: "#f4d2de" }}
+                whileTap={{ scale: 0.95 }}
                 href="/contact"
-                className="bg-burgundy text-gold-light px-8 py-3.5 rounded-full font-semibold hover:bg-burgundy-dark transition-colors text-lg"
+                className="bg-burgundy text-gold-light px-8 py-3.5 rounded-full font-semibold transition-colors text-lg inline-block text-center"
               >
                 Get Started
-              </a>
-              <a
+              </motion.a>
+              <motion.a
+                whileHover={{ scale: 1.05, backgroundColor: "#a6254a", color: "#ffffff" }}
+                whileTap={{ scale: 0.95 }}
                 href="/about"
-                className="border-2 border-burgundy text-burgundy px-8 py-3.5 rounded-full font-semibold hover:bg-burgundy hover:text-white transition-colors text-lg"
+                className="border-2 border-burgundy text-burgundy px-8 py-3.5 rounded-full font-semibold transition-colors text-lg inline-block text-center"
               >
                 Learn More
-              </a>
+              </motion.a>
             </div>
-          </div>
+          </motion.div>
 
           {/* Image */}
-          <div className="relative hidden lg:flex justify-end">
+          <motion.div 
+            initial={{ opacity: 0, x: 30 }} 
+            animate={{ opacity: 1, x: 0 }} 
+            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+            className="relative hidden lg:flex justify-end"
+          >
             <div className="relative w-full max-w-sm aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl">
               <Image
                 src="/images/talha-hadi-IGXoW3TU038-unsplash.jpg"
@@ -70,7 +87,7 @@ export default function Hero() {
                 <p className="text-text-dark/50 text-xs">Successful Matches</p>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

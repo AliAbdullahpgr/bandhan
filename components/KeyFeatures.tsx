@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const features = [
   { title: "Personally Handled", desc: "We do all the matchmaking work — you just share your preferences and we take it from there." },
@@ -14,7 +17,12 @@ export default function KeyFeatures() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           {/* Content */}
-          <div>
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6 }}
+          >
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-burgundy mb-4">
               Key Features
             </h2>
@@ -36,13 +44,24 @@ export default function KeyFeatures() {
                 </li>
               ))}
             </ul>
-            <a href="/contact" className="mt-8 inline-block bg-burgundy text-gold-light px-8 py-3 rounded-full font-semibold hover:bg-burgundy-dark transition-colors">
+            <motion.a 
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              href="/contact" 
+              className="mt-8 inline-block bg-burgundy text-gold-light px-8 py-3 rounded-full font-semibold hover:bg-burgundy-dark transition-colors"
+            >
               Get in Touch
-            </a>
-          </div>
+            </motion.a>
+          </motion.div>
 
           {/* Image */}
-          <div className="relative aspect-[3/4] rounded-3xl overflow-hidden shadow-lg">
+          <motion.div 
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="relative aspect-[3/4] rounded-3xl overflow-hidden shadow-lg"
+          >
             <Image
               src="/images/muhammad-shah-zeb-ryOiannoQ3g-unsplash.jpg"
               alt="Nikkah nama signing — the blessed moment"
@@ -50,7 +69,7 @@ export default function KeyFeatures() {
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

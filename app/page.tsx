@@ -5,6 +5,7 @@ import Statistics from "@/components/Statistics";
 import KeyFeatures from "@/components/KeyFeatures";
 import HowItWorks from "@/components/HowItWorks";
 import TestimonialsSection from "@/components/Testimonials";
+import FAQ from "@/components/FAQ";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <KeyFeatures />
       <HowItWorks />
       <TestimonialsSection />
+      <FAQ />
     </>
   );
 }
