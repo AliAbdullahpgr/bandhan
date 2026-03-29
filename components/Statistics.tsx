@@ -11,12 +11,12 @@ const stats = [
 
 export default function Statistics() {
   return (
-    <section className="py-20 bg-cream">
+    <section className="py-20 bg-ivory">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="font-heading text-3xl sm:text-4xl font-bold text-burgundy mb-4">
           Bandhan&apos;s User Statistics
         </h2>
-        <p className="text-dark/50 mb-14 max-w-md mx-auto">
+        <p className="text-text-dark/50 mb-14 max-w-md mx-auto">
           Join thousands of families who have found their perfect match through Bandhan.
         </p>
 
@@ -80,14 +80,14 @@ function StatCard({
 
   return (
     <div ref={ref} className="flex flex-col items-center gap-3">
-      <div className="w-20 h-20 rounded-full bg-primary-light/50 flex items-center justify-center">
+      <div className="w-20 h-20 rounded-full bg-ivory/50 flex items-center justify-center">
         <StatIcon name={icon} />
       </div>
       <span className="font-heading text-3xl font-bold text-burgundy">
         {count.toLocaleString()}
         {suffix || ""}
       </span>
-      <span className="text-dark/50 text-sm">{label}</span>
+      <span className="text-text-dark/50 text-sm">{label}</span>
     </div>
   );
 }

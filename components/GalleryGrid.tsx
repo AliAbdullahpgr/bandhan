@@ -102,8 +102,8 @@ export default function GalleryGrid() {
             onClick={() => setFilter(cat.key)}
             className={`px-5 py-2 rounded-full text-sm font-medium transition-colors ${
               filter === cat.key
-                ? "bg-primary text-white"
-                : "bg-white text-dark/60 hover:bg-primary-light/50"
+                ? "bg-burgundy text-gold-light"
+                : "bg-white text-text-dark/60 hover:bg-ivory/50"
             }`}
           >
             {cat.label}
@@ -117,7 +117,7 @@ export default function GalleryGrid() {
           <button
             key={item.src}
             onClick={() => setLightbox(i)}
-            className="group relative aspect-[3/4] rounded-2xl overflow-hidden bg-cream hover:shadow-lg transition-shadow"
+            className="group relative aspect-[3/4] rounded-2xl overflow-hidden bg-ivory hover:shadow-lg transition-shadow"
           >
             <Image
               src={item.src}
@@ -137,7 +137,7 @@ export default function GalleryGrid() {
       {/* Lightbox */}
       {lightbox !== null && (
         <div
-          className="fixed inset-0 bg-dark/90 z-50 flex items-center justify-center p-4"
+          className="fixed inset-0 bg-text-dark/90 z-50 flex items-center justify-center p-4"
           onClick={() => setLightbox(null)}
         >
           <div
@@ -154,7 +154,7 @@ export default function GalleryGrid() {
               />
             </div>
             <div className="p-4 bg-white text-center">
-              <p className="text-dark/70 text-sm">{filtered[lightbox].alt}</p>
+              <p className="text-text-dark/70 text-sm">{filtered[lightbox].alt}</p>
             </div>
 
             {/* Close */}
@@ -162,7 +162,7 @@ export default function GalleryGrid() {
               onClick={() => setLightbox(null)}
               className="absolute top-3 right-3 w-9 h-9 rounded-full bg-white/90 flex items-center justify-center shadow-md hover:bg-white transition-colors"
             >
-              <svg className="w-5 h-5 text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
@@ -173,7 +173,7 @@ export default function GalleryGrid() {
                 onClick={(e) => { e.stopPropagation(); setLightbox(lightbox - 1); }}
                 className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 flex items-center justify-center shadow-md hover:bg-white"
               >
-                <svg className="w-5 h-5 text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                 </svg>
               </button>
@@ -183,7 +183,7 @@ export default function GalleryGrid() {
                 onClick={(e) => { e.stopPropagation(); setLightbox(lightbox + 1); }}
                 className="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 flex items-center justify-center shadow-md hover:bg-white"
               >
-                <svg className="w-5 h-5 text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </button>

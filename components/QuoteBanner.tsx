@@ -1,6 +1,6 @@
 export default function QuoteBanner() {
   return (
-    <section className="bg-cream relative overflow-hidden">
+    <section className="bg-ivory relative overflow-hidden">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
         {/* Decorative quotes */}
         <svg
@@ -11,7 +11,7 @@ export default function QuoteBanner() {
           <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z" />
         </svg>
 
-        <blockquote className="font-heading text-xl sm:text-2xl text-dark/80 leading-relaxed italic">
+        <blockquote className="font-heading text-xl sm:text-2xl text-text-dark/80 leading-relaxed italic">
           &ldquo;Marry the single people from among you and the righteous among
           your male and female servants. If you are poor, Allah (SWT) will make
           you rich through His favour; and Allah (SWT) is Bountiful,

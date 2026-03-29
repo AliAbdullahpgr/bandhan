@@ -54,12 +54,12 @@ export default function TestimonialsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-b from-primary-light/30 to-cream py-20">
+      <section className="bg-gradient-to-b from-cream/30 to-ivory py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-heading text-4xl sm:text-5xl font-bold text-burgundy mb-4">
             Success Stories
           </h1>
-          <p className="text-dark/60 text-lg max-w-xl mx-auto">
+          <p className="text-text-dark/60 text-lg max-w-xl mx-auto">
             Real stories from real families. See how Bandhan has brought
             happiness to homes across Pakistan.
           </p>
@@ -67,7 +67,7 @@ export default function TestimonialsPage() {
       </section>
 
       {/* Testimonials grid */}
-      <section className="py-16 bg-cream">
+      <section className="py-16 bg-ivory">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {testimonials.map((t) => (
@@ -76,9 +76,9 @@ export default function TestimonialsPage() {
                 className="bg-white rounded-2xl p-7 shadow-sm hover:shadow-md transition-shadow"
               >
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 rounded-full bg-primary-light flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-full bg-ivory flex items-center justify-center">
                     <svg
-                      className="w-6 h-6 text-primary"
+                      className="w-6 h-6 text-burgundy"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                     >
@@ -86,13 +86,13 @@ export default function TestimonialsPage() {
                     </svg>
                   </div>
                   <div>
-                    <p className="font-semibold text-dark">{t.name}</p>
-                    <p className="text-xs text-dark/40">
+                    <p className="font-semibold text-text-dark">{t.name}</p>
+                    <p className="text-xs text-text-dark/40">
                       {t.location} &middot; {t.year}
                     </p>
                   </div>
                 </div>
-                <p className="text-dark/60 text-sm leading-relaxed italic">
+                <p className="text-text-dark/60 text-sm leading-relaxed italic">
                   &ldquo;{t.quote}&rdquo;
                 </p>
               </div>
@@ -107,26 +107,26 @@ export default function TestimonialsPage() {
           <h2 className="font-heading text-3xl font-bold text-burgundy mb-4">
             Video Testimonials
           </h2>
-          <p className="text-dark/50 mb-10">
+          <p className="text-text-dark/50 mb-10">
             Coming soon — watch families share their Bandhan experience.
           </p>
           <div className="grid sm:grid-cols-2 gap-6">
             {[1, 2].map((i) => (
               <div
                 key={i}
-                className="aspect-video rounded-2xl bg-cream flex items-center justify-center"
+                className="aspect-video rounded-2xl bg-ivory flex items-center justify-center"
               >
                 <div className="text-center">
-                  <div className="w-16 h-16 rounded-full bg-primary-light flex items-center justify-center mx-auto mb-3">
+                  <div className="w-16 h-16 rounded-full bg-ivory flex items-center justify-center mx-auto mb-3">
                     <svg
-                      className="w-8 h-8 text-primary ml-1"
+                      className="w-8 h-8 text-burgundy ml-1"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                     >
                       <path d="M8 5v14l11-7z" />
                     </svg>
                   </div>
-                  <p className="text-dark/40 text-sm">Video coming soon</p>
+                  <p className="text-text-dark/40 text-sm">Video coming soon</p>
                 </div>
               </div>
             ))}

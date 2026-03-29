@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative bg-gradient-to-b from-primary-light/30 to-cream overflow-hidden">
+    <section className="relative bg-gradient-to-b from-cream/30 to-ivory overflow-hidden">
       {/* Decorative florals */}
       <FloralTopLeft />
       <FloralTopRight />
@@ -17,27 +17,27 @@ export default function Hero() {
             <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-burgundy leading-tight mb-6">
               Find Your Perfect
               <br />
-              <span className="text-primary">Life Partner</span>
+              <span className="text-burgundy">Life Partner</span>
             </h1>
-            <p className="text-dark/60 text-lg max-w-xl mb-4">
-              <strong className="text-dark/80">Bandhan International Marriage Bureau</strong> — a simple &amp; secure
+            <p className="text-text-dark/60 text-lg max-w-xl mb-4">
+              <strong className="text-text-dark/80">Bandhan International Marriage Bureau</strong> — a simple &amp; secure
               matrimonial service by Rubab Ali. We handle everything for you, from
               finding the right match to coordinating between families.
             </p>
-            <p className="text-dark/50 text-sm mb-10">
+            <p className="text-text-dark/50 text-sm mb-10">
               Based in Karachi &middot; Serving families across Pakistan
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
                 href="/contact"
-                className="bg-primary text-white px-8 py-3.5 rounded-full font-semibold hover:bg-primary-dark transition-colors text-lg"
+                className="bg-burgundy text-gold-light px-8 py-3.5 rounded-full font-semibold hover:bg-burgundy-dark transition-colors text-lg"
               >
                 Get Started
               </a>
               <a
                 href="/about"
-                className="border-2 border-primary text-primary px-8 py-3.5 rounded-full font-semibold hover:bg-primary hover:text-white transition-colors text-lg"
+                className="border-2 border-burgundy text-burgundy px-8 py-3.5 rounded-full font-semibold hover:bg-burgundy hover:text-white transition-colors text-lg"
               >
                 Learn More
               </a>
@@ -60,14 +60,14 @@ export default function Hero() {
             </div>
             {/* Floating accent card */}
             <div className="absolute -bottom-4 -left-4 bg-white rounded-2xl shadow-lg p-4 flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-primary-light flex items-center justify-center">
-                <svg className="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 24 24">
+              <div className="w-10 h-10 rounded-full bg-ivory flex items-center justify-center">
+                <svg className="w-5 h-5 text-burgundy" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
                 </svg>
               </div>
               <div>
                 <p className="font-bold text-burgundy text-sm">1,190+</p>
-                <p className="text-dark/50 text-xs">Successful Matches</p>
+                <p className="text-text-dark/50 text-xs">Successful Matches</p>
               </div>
             </div>
           </div>

@@ -19,13 +19,13 @@ export default function CreateProfileCTA() {
 
           {/* Content */}
           <div>
-            <span className="inline-block bg-primary-light text-primary text-xs font-semibold px-3 py-1 rounded-full mb-4">
+            <span className="inline-block bg-ivory text-burgundy text-xs font-semibold px-3 py-1 rounded-full mb-4">
               Karachi-Based Service
             </span>
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-burgundy mb-4">
               We Find the<br />Right Match for You
             </h2>
-            <p className="text-dark/60 leading-relaxed mb-8">
+            <p className="text-text-dark/60 leading-relaxed mb-8">
               At Bandhan Rubab Ali, you don&apos;t have to search through
               profiles or manage anything yourself. Share your requirements with
               us and our experienced team personally handles the entire
@@ -34,7 +34,7 @@ export default function CreateProfileCTA() {
             </p>
             <Link
               href="/contact"
-              className="inline-block bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-primary-dark transition-colors"
+              className="inline-block bg-burgundy text-gold-light px-8 py-3 rounded-full font-semibold hover:bg-burgundy-dark transition-colors"
             >
               Contact Us
             </Link>

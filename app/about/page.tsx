@@ -32,12 +32,12 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-b from-primary-light/30 to-cream py-20">
+      <section className="bg-gradient-to-b from-cream/30 to-ivory py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-heading text-4xl sm:text-5xl font-bold text-burgundy mb-6">
             About Bandhan
           </h1>
-          <p className="text-dark/60 text-lg leading-relaxed max-w-2xl mx-auto">
+          <p className="text-text-dark/60 text-lg leading-relaxed max-w-2xl mx-auto">
             Bandhan International Marriage Bureau, led by CEO Rubab Ali, is a
             trusted matrimonial service based in Karachi, Pakistan. We connect
             families with sincerity, respect, and Islamic values &mdash;
@@ -54,13 +54,13 @@ export default function AboutPage() {
               <h2 className="font-heading text-3xl font-bold text-burgundy mb-4">
                 Our Mission
               </h2>
-              <p className="text-dark/60 leading-relaxed mb-4">
+              <p className="text-text-dark/60 leading-relaxed mb-4">
                 At Bandhan, our mission is to take the stress out of finding a
                 life partner. We personally handle the entire matchmaking
                 process — from understanding your family&apos;s requirements to
                 shortlisting compatible matches and coordinating introductions.
               </p>
-              <p className="text-dark/60 leading-relaxed">
+              <p className="text-text-dark/60 leading-relaxed">
                 Founded by Rubab Ali in Karachi, Bandhan has helped over a
                 thousand families find their perfect match. With deep roots in
                 the local community and years of experience, we offer a
@@ -68,7 +68,7 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="flex justify-center">
-              <div className="w-full max-w-sm aspect-square rounded-3xl bg-gradient-to-br from-primary-light/40 to-gold-light flex items-center justify-center">
+              <div className="w-full max-w-sm aspect-square rounded-3xl bg-gradient-to-br from-cream/40 to-cream flex items-center justify-center">
                 <svg width="200" height="200" viewBox="0 0 200 200" fill="none">
                   <circle cx="100" cy="80" r="40" fill="#F4D2DE" />
                   <circle cx="100" cy="70" r="28" fill="#FFFFFF" />
@@ -86,7 +86,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="py-20 bg-cream">
+      <section className="py-20 bg-ivory">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-heading text-3xl font-bold text-burgundy text-center mb-14">
             Our Values
@@ -97,9 +97,9 @@ export default function AboutPage() {
                 key={v.title}
                 className="bg-white rounded-2xl p-7 text-center shadow-sm hover:shadow-md transition-shadow"
               >
-                <div className="w-14 h-14 rounded-full bg-primary-light/50 flex items-center justify-center mx-auto mb-5">
+                <div className="w-14 h-14 rounded-full bg-ivory/50 flex items-center justify-center mx-auto mb-5">
                   <svg
-                    className="w-6 h-6 text-primary"
+                    className="w-6 h-6 text-burgundy"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -112,10 +112,10 @@ export default function AboutPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="font-heading text-lg font-bold text-dark mb-2">
+                <h3 className="font-heading text-lg font-bold text-text-dark mb-2">
                   {v.title}
                 </h3>
-                <p className="text-dark/50 text-sm leading-relaxed">{v.desc}</p>
+                <p className="text-text-dark/50 text-sm leading-relaxed">{v.desc}</p>
               </div>
             ))}
           </div>

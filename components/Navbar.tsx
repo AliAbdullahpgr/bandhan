@@ -17,7 +17,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-primary-light/40">
+    <nav className="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-cream">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -29,25 +29,25 @@ export default function Navbar() {
               height={44}
               className="rounded-full"
             />
-            <span className="font-heading text-2xl font-bold text-burgundy">
+            <span className="font-heading text-xl font-bold text-burgundy">
               Bandhan
             </span>
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-7">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-dark/70 hover:text-primary transition-colors"
+                className="text-sm font-medium text-text-muted hover:text-burgundy transition-colors"
               >
                 {link.label}
               </Link>
             ))}
             <Link
               href="/contact"
-              className="bg-primary text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-primary-dark transition-colors"
+              className="bg-burgundy text-gold-light px-5 py-2 rounded-full text-sm font-semibold hover:bg-burgundy-dark transition-colors"
             >
               Contact Us
             </Link>
@@ -56,7 +56,7 @@ export default function Navbar() {
           {/* Mobile toggle */}
           <button
             onClick={() => setOpen(!open)}
-            className="md:hidden p-2 text-dark"
+            className="md:hidden p-2 text-text-dark"
             aria-label="Toggle menu"
           >
             <svg
@@ -87,13 +87,13 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {open && (
-        <div className="md:hidden bg-white border-t border-primary-light/40 px-4 pb-4">
+        <div className="md:hidden bg-white border-t border-cream px-4 pb-4">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="block py-3 text-dark/70 hover:text-primary font-medium border-b border-cream"
+              className="block py-3 text-text-muted hover:text-burgundy font-medium border-b border-ivory"
             >
               {link.label}
             </Link>
@@ -101,30 +101,12 @@ export default function Navbar() {
           <Link
             href="/contact"
             onClick={() => setOpen(false)}
-            className="mt-3 block text-center bg-primary text-white px-5 py-2.5 rounded-full font-semibold"
+            className="mt-3 block text-center bg-burgundy text-gold-light px-5 py-2.5 rounded-full font-semibold"
           >
-            Register Now
+            Contact Us
           </Link>
         </div>
       )}
     </nav>
-  );
-}
-
-function FloralIcon() {
-  return (
-    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-      <circle cx="16" cy="16" r="14" fill="#F4D2DE" />
-      <path
-        d="M16 8c-2 3-5 5-5 8a5 5 0 0010 0c0-3-3-5-5-8z"
-        fill="#C0396B"
-      />
-      <path
-        d="M16 8c2 3 5 5 5 8a5 5 0 01-10 0c0-3 3-5 5-8z"
-        fill="#D4A843"
-        opacity="0.5"
-      />
-      <circle cx="16" cy="17" r="2" fill="#FFF9F5" />
-    </svg>
   );
 }

@@ -33,19 +33,19 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-b from-primary-light/30 to-cream py-20">
+      <section className="bg-gradient-to-b from-cream/30 to-ivory py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-heading text-4xl sm:text-5xl font-bold text-burgundy mb-4">
             Contact Us
           </h1>
-          <p className="text-dark/60 text-lg max-w-xl mx-auto">
+          <p className="text-text-dark/60 text-lg max-w-xl mx-auto">
             Ready to start your journey? Get in touch with us and we&apos;ll
             help you find the perfect match.
           </p>
         </div>
       </section>
 
-      <section className="py-16 bg-cream">
+      <section className="py-16 bg-ivory">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-5 gap-12">
             {/* Form */}
@@ -60,9 +60,9 @@ export default function ContactPage() {
                   key={info.title}
                   className="bg-white rounded-2xl p-6 shadow-sm flex items-start gap-4"
                 >
-                  <div className="w-11 h-11 rounded-full bg-primary-light/50 flex items-center justify-center flex-shrink-0">
+                  <div className="w-11 h-11 rounded-full bg-ivory/50 flex items-center justify-center flex-shrink-0">
                     <svg
-                      className="w-5 h-5 text-primary"
+                      className="w-5 h-5 text-burgundy"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -76,20 +76,20 @@ export default function ContactPage() {
                     </svg>
                   </div>
                   <div>
-                    <p className="font-semibold text-dark text-sm">
+                    <p className="font-semibold text-text-dark text-sm">
                       {info.title}
                     </p>
-                    <p className="text-dark/50 text-sm mt-0.5">{info.value}</p>
+                    <p className="text-text-dark/50 text-sm mt-0.5">{info.value}</p>
                   </div>
                 </div>
               ))}
 
               {/* Map placeholder */}
               <div className="bg-white rounded-2xl overflow-hidden shadow-sm">
-                <div className="aspect-[4/3] bg-gradient-to-br from-primary-light/20 to-gold-light flex items-center justify-center">
+                <div className="aspect-[4/3] bg-gradient-to-br from-cream/20 to-cream flex items-center justify-center">
                   <div className="text-center">
                     <svg
-                      className="w-12 h-12 text-primary/30 mx-auto mb-2"
+                      className="w-12 h-12 text-burgundy/30 mx-auto mb-2"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -107,7 +107,7 @@ export default function ContactPage() {
                         d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                       />
                     </svg>
-                    <p className="text-dark/30 text-sm">
+                    <p className="text-text-dark/30 text-sm">
                       Karachi, Sindh, Pakistan
                     </p>
                   </div>

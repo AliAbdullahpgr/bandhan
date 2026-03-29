@@ -1,11 +1,9 @@
-import Image from "next/image";
-
 const steps = [
   {
     num: "01",
     title: "Contact Us",
     desc: "Reach out to Bandhan Rubab Ali via phone, WhatsApp, or our contact form to share your requirements.",
-    color: "bg-primary",
+    color: "bg-burgundy",
   },
   {
     num: "02",
@@ -17,7 +15,7 @@ const steps = [
     num: "03",
     title: "Family Introduction",
     desc: "We coordinate meetings between both families in a respectful, comfortable setting.",
-    color: "bg-primary",
+    color: "bg-burgundy",
   },
   {
     num: "04",
@@ -29,12 +27,12 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="py-20 bg-cream">
+    <section id="how-it-works" className="py-20 bg-ivory">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="font-heading text-3xl sm:text-4xl font-bold text-burgundy mb-3">
           How Bandhan Works
         </h2>
-        <p className="text-dark/50 mb-14 max-w-lg mx-auto">
+        <p className="text-text-dark/50 mb-14 max-w-lg mx-auto">
           A simple 4-step process — we handle everything so you don&apos;t have to.
         </p>
 
@@ -49,29 +47,16 @@ export default function HowItWorks() {
               >
                 {step.num}
               </span>
-              <h3 className="font-heading text-xl font-bold text-dark mb-2">
+              <h3 className="font-heading text-xl font-bold text-text-dark mb-2">
                 {step.title}
               </h3>
-              <p className="text-dark/50 text-sm leading-relaxed">
+              <p className="text-text-dark/50 text-sm leading-relaxed">
                 {step.desc}
               </p>
             </div>
           ))}
         </div>
 
-        {/* Center image */}
-        <div className="mt-14 flex justify-center">
-          <div className="relative w-full max-w-2xl aspect-[16/7] rounded-2xl overflow-hidden shadow-md">
-            <Image
-              src="/images/hamid-roshaan-urgOyJqMoCc-unsplash.jpg"
-              alt="Bridal bangles and mehndi — wedding traditions"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 700px"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-burgundy/30 to-transparent" />
-          </div>
-        </div>
       </div>
     </section>
   );

@@ -18,25 +18,25 @@ export default function KeyFeatures() {
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-burgundy mb-4">
               Key Features
             </h2>
-            <p className="text-dark/50 mb-8">
+            <p className="text-text-dark/50 mb-8">
               Why families across Karachi trust Bandhan Rubab Ali with their most important decision.
             </p>
             <ul className="space-y-5">
               {features.map((f) => (
                 <li key={f.title} className="flex items-start gap-3">
-                  <span className="mt-1 w-5 h-5 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
+                  <span className="mt-1 w-5 h-5 rounded-full bg-burgundy flex items-center justify-center flex-shrink-0">
                     <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                     </svg>
                   </span>
                   <div>
-                    <span className="font-semibold text-dark">{f.title}</span>
-                    <p className="text-dark/50 text-sm mt-0.5">{f.desc}</p>
+                    <span className="font-semibold text-text-dark">{f.title}</span>
+                    <p className="text-text-dark/50 text-sm mt-0.5">{f.desc}</p>
                   </div>
                 </li>
               ))}
             </ul>
-            <a href="/contact" className="mt-8 inline-block bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-primary-dark transition-colors">
+            <a href="/contact" className="mt-8 inline-block bg-burgundy text-gold-light px-8 py-3 rounded-full font-semibold hover:bg-burgundy-dark transition-colors">
               Get in Touch
             </a>
           </div>
