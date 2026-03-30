@@ -15,7 +15,7 @@ const testimonials = [
     name: "Hassan & Ayesha",
     location: "Lahore",
     quote:
-      "We are grateful to Bandhan Rubab Ali for connecting our families. The team was very supportive and made the entire process comfortable for both sides.",
+      "We are grateful to CEO Rabab Ali at Bandhan for connecting our families. The team was very supportive and made the entire process comfortable for both sides.",
     year: "2024",
   },
   {

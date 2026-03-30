@@ -27,7 +27,7 @@ export default function KeyFeatures() {
               Key Features
             </h2>
             <p className="text-text-dark/50 mb-8">
-              Why families across Karachi trust Bandhan Rubab Ali with their most important decision.
+              Why families across Karachi trust CEO Rabab Ali at Bandhan with their most important decision.
             </p>
             <ul className="space-y-5">
               {features.map((f) => (

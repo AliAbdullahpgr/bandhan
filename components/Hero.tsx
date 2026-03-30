@@ -29,7 +29,7 @@ export default function Hero() {
             </h1>
             <p className="text-text-dark/60 text-lg max-w-xl mb-4">
               <strong className="text-text-dark/80">Bandhan International Marriage Bureau</strong> — a simple &amp; secure
-              matrimonial service by Rubab Ali. We handle everything for you, from
+              matrimonial service by CEO Rabab Ali. We handle everything for you, from
               finding the right match to coordinating between families.
             </p>
             <p className="text-text-dark/50 text-sm mb-10">

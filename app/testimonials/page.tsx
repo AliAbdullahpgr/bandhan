@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Testimonials | Bandhan Rubab Ali",
+  title: "Testimonials | CEO Rabab Ali at Bandhan",
   description: "Read success stories from families who found their perfect match through Bandhan.",
 };
 
@@ -18,7 +18,7 @@ const testimonials = [
     location: "Lahore",
     year: "2024",
     quote:
-      "We are grateful to Bandhan Rubab Ali for connecting our families. The team was very supportive and made the entire process comfortable for both sides.",
+      "We are grateful to CEO Rabab Ali at Bandhan for connecting our families. The team was very supportive and made the entire process comfortable for both sides.",
   },
   {
     name: "Bilal & Sana",

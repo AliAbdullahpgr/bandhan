@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import GalleryGrid from "@/components/GalleryGrid";
 
 export const metadata: Metadata = {
-  title: "Gallery | Bandhan Rubab Ali",
-  description: "See our success stories — couples matched through Bandhan Rubab Ali matchmaking service.",
+  title: "Gallery | CEO Rabab Ali at Bandhan",
+  description: "See our success stories — couples matched through CEO Rabab Ali at Bandhan matchmaking service.",
 };
 
 export default function GalleryPage() {

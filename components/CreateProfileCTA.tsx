@@ -26,7 +26,7 @@ export default function CreateProfileCTA() {
               We Find the<br />Right Match for You
             </h2>
             <p className="text-text-dark/60 leading-relaxed mb-8">
-              At Bandhan Rubab Ali, you don&apos;t have to search through
+              At CEO Rabab Ali at Bandhan, you don&apos;t have to search through
               profiles or manage anything yourself. Share your requirements with
               us and our experienced team personally handles the entire
               matchmaking process — from shortlisting compatible families to

@@ -6,6 +6,7 @@ const footerLinks = {
     { href: "/about", label: "About Us" },
     { href: "/gallery", label: "Gallery" },
     { href: "/testimonials", label: "Success Stories" },
+    { href: "/events", label: "Events" },
     { href: "/contact", label: "Contact" },
   ],
   Services: [
@@ -42,14 +43,14 @@ export default function Footer() {
               Bandhan International Marriage Bureau
             </p>
             <p className="text-white/50 text-sm leading-relaxed mb-2">
-              CEO: Rubab Ali
+              CEO: Rabab Ali
             </p>
             <p className="text-white/50 text-sm leading-relaxed mb-2">
               A simple &amp; secure matrimonial service. Connecting families
               with sincerity, respect, and Islamic values.
             </p>
             <p className="text-gold text-sm font-medium mb-6">
-              0334-0920077
+              0334-0920077 (CEO Rabab Ali)
             </p>
             <div className="flex gap-4">
               {["facebook", "instagram", "whatsapp"].map((social) => (
@@ -87,7 +88,7 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-white/50">
-            &copy; {new Date().getFullYear()} Bandhan Rubab Ali. All rights
+            &copy; {new Date().getFullYear()} Bandhan Rabab Ali. All rights
             reserved.
           </p>
           <p className="text-sm text-white/50">Based in Karachi, Pakistan</p>

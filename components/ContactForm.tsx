@@ -25,7 +25,7 @@ export default function ContactForm() {
         </div>
         <div>
           <p className="font-semibold text-green-800">Chat on WhatsApp</p>
-          <p className="text-green-600 text-sm">0334-0920077</p>
+          <p className="text-green-600 text-sm">0334-0920077 (CEO Rabab Ali)</p>
         </div>
       </a>
 
@@ -41,7 +41,7 @@ export default function ContactForm() {
         </div>
         <div>
           <p className="font-semibold text-text-dark">Call Us</p>
-          <p className="text-text-dark/50 text-sm">0334-0920077</p>
+          <p className="text-text-dark/50 text-sm">0334-0920077 (CEO Rabab Ali)</p>
         </div>
       </a>
 

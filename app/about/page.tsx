@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us | Bandhan Rubab Ali",
-  description: "Learn about Bandhan Rubab Ali's mission to connect families through trusted matchmaking in Karachi.",
+  title: "About Us | Bandhan Rabab Ali",
+  description: "Learn about CEO Rabab Ali's mission at Bandhan International Marriage Bureau to connect families through trusted matchmaking in Karachi.",
 };
 
 const values = [
@@ -38,7 +38,7 @@ export default function AboutPage() {
             About Bandhan
           </h1>
           <p className="text-text-dark/60 text-lg leading-relaxed max-w-2xl mx-auto">
-            Bandhan International Marriage Bureau, led by CEO Rubab Ali, is a
+            Bandhan International Marriage Bureau, led by CEO Rabab Ali, is a
             trusted matrimonial service based in Karachi, Pakistan. We connect
             families with sincerity, respect, and Islamic values &mdash;
             &ldquo;Rishta kahin ka bhi ho, hum aap ke liye dhoond nikalain ge.&rdquo;
@@ -61,7 +61,7 @@ export default function AboutPage() {
                 shortlisting compatible matches and coordinating introductions.
               </p>
               <p className="text-text-dark/60 leading-relaxed">
-                Founded by Rubab Ali in Karachi, Bandhan has helped over a
+                Founded by CEO Rabab Ali in Karachi, Bandhan has helped over a
                 thousand families find their perfect match. With deep roots in
                 the local community and years of experience, we offer a
                 personal, hands-on service that no app or website can replace.

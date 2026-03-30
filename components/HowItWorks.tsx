@@ -6,7 +6,7 @@ const steps = [
   {
     num: "01",
     title: "Contact Us",
-    desc: "Reach out to Bandhan Rubab Ali via phone, WhatsApp, or our contact form to share your requirements.",
+    desc: "Reach out to CEO Rabab Ali at Bandhan via phone, WhatsApp, or our contact form to share your requirements.",
     color: "bg-burgundy",
   },
   {

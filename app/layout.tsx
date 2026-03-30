@@ -18,9 +18,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Bandhan International Marriage Bureau | Rubab Ali CEO",
+  title: "Bandhan International Marriage Bureau | CEO Rabab Ali",
   description:
-    "Bandhan International Marriage Bureau by Rubab Ali — a trusted, simple & secure matrimonial service based in Karachi, Pakistan. Marriage is a sunnah of Rasulullah s.a.w.",
+    "Bandhan International Marriage Bureau by CEO Rabab Ali — a trusted, simple & secure matrimonial service based in Karachi, Pakistan. Marriage is a sunnah of Rasulullah s.a.w.",
 };
 
 export default function RootLayout({
