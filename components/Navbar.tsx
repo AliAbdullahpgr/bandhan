@@ -30,7 +30,7 @@ export default function Navbar() {
               className="rounded-full"
             />
             <span className="font-heading text-xl font-bold text-burgundy">
-              Bandhan
+              Bandhan Rabab Ali
             </span>
           </Link>
 
